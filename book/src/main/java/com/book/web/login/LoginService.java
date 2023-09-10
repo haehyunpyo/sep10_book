@@ -47,7 +47,7 @@ public class LoginService {
           BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
           StringBuilder sb = new StringBuilder();
           sb.append("grant_type=authorization_code");
-          sb.append("&client_id=3ecca13d973c6d11e752a114a1e14922"); // TODO REST_API_KEY 입력
+          sb.append("&client_id=***REST_API***"); // TODO REST_API_KEY 입력
           sb.append("&redirect_uri=http://localhost/login/kakao"); // TODO 인가코드 받은 redirect_uri 입력
           sb.append("&code=" + code);
           bw.write(sb.toString());
@@ -174,8 +174,8 @@ public class LoginService {
 	          BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
 	          StringBuilder sb = new StringBuilder();
 	          sb.append("grant_type=authorization_code");
-	          sb.append("&client_id=hnntl6BcuuFp5qf4vMAt"); // TODO Client ID 입력
-	          sb.append("&client_secret=S2tSUIOot4"); // TODO Client Secret 입력
+	          sb.append("&client_id=***Client ID***"); // TODO Client ID 입력
+	          sb.append("&client_secret=***Client Secret***"); // TODO Client Secret 입력
 	          sb.append("&code=" + Ncode);
 	          sb.append("&redirect_uri=http://localhost/login/naver"); // TODO 인가코드 받은 redirect_uri 입력
 	          bw.write(sb.toString());
@@ -251,7 +251,6 @@ public class LoginService {
 	            }
 	            //System.out.println("response body : " + result);
 	            //response body : {"resultcode":"00","message":"success",
-	            // "response":{"id":"MYTpCxw_Dk2TQEhnP_bIHQfync4EgPoU_ThlOL-INR8","nickname":"phyho","email":"phyho0228@naver.com","mobile":"010-6534-2377","mobile_e164":"+821065342377","name":"\ud45c\ud574\ud604"}}
 
 	            // 네이버 유저정보 받아오기
 	            Gson gson = new Gson();

@@ -203,8 +203,8 @@ public class LoginService {
 	          Naccess_Token  = element.getAsJsonObject().get("access_token").getAsString();
 	          Nrefresh_Token = element.getAsJsonObject().get("refresh_token").getAsString();
 
-	          //System.out.println("Naccess_token : " + Naccess_Token);	// AAAAOas6tf3pSri5ll2PWpedUIEi-V0wBZ3_RXDaV07N2DvstopFdFlAMOTKCYP2WJZKBMq_nBqDEYyplhuCfQl_a5o
-	          //System.out.println("Nrefresh_token : " + Nrefresh_Token);	// dpqPmnlTMO684PXmisGfviiVb67IdKboz4qPvKkFLVOWlOuLFisk05EnNTKCmdkh4HVYjzrYeO5I8Q0Mufq1P6JjPCWGaDmii4JzC2o5J9RXnZHrXqc3xENgTTiihbbFzQipf3
+	          //System.out.println("Naccess_token : " + Naccess_Token);	
+	          //System.out.println("Nrefresh_token : " + Nrefresh_Token);	
 
 	          Nbr.close();
 	          bw.close();
